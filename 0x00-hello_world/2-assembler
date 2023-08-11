@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Check if the C file variable is set
+if [ -z "$CFILE" ]; then
+    echo "Please set the C file name in the CFILE variable."
+    exit 1
+fi
+
+# Create the output file name by replacing .c with .s
+OUTPUT_FILE="${CFILE%.c}.s"
+
+# Generate assembly code from the C file
+gcc -S "$CFILE" -o "$OUTPUT_FILE"
+
+echo "Assembly code generated and saved to $OUTPUT_FILE"1
