@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o ${CFILE%.c}.s
+echo 'int main(void) { printf("Hello, Assembly!\n"); return (0); }' > "$CFILE"; gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
