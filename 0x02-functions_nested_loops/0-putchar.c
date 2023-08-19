@@ -1,9 +1,10 @@
 #include "putcher.c"
+#include <stdio.h>
+
 
 /**
- * main -  prints putchar,
- *followed by a new line
-
+ * main -  prints _putcher followed by an empty line
+ * 
  * Return: Always 0
  */
 int main(void)
@@ -16,6 +17,7 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
+	_putchar(' ')
 	_putchar('\n');
 
 	return (0);
