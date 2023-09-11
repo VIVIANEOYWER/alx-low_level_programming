@@ -7,6 +7,7 @@
  * @owner: owner of the dog
  * Desc: header file
  */
+
 typedef struct dog
 {
 char *name;
